@@ -1,5 +1,5 @@
 <?php
-    $PATH_PREFIX = "/?";
+    $PATH_PREFIX = "?";
 ?>
 
 <div id="blocks_menu" style="background-color: #ddd;height: 600px; width: 220px; position: absolute; margin-left: 250px; z-index: 1; overflow-y: scroll; visibility: hidden">
