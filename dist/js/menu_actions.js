@@ -19,7 +19,7 @@ $( function() {
 
     });
 
-    $(document).click(function () {
+    $("#page-wrapper").click(function () {
         hideBlocks();
     })
 

@@ -57,7 +57,7 @@
         {
             $path = "./pages/palette/interval.html";
             $menu_title = "Interval";
-            $menu_image = "./dist/img/interval.png";
+            $menu_image = "./dist/img/intervals.png";
             $menu_html = "./pages/palette/interval_block.html";
             $showMenu = True;
         }
