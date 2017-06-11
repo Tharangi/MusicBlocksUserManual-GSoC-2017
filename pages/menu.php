@@ -13,10 +13,10 @@
         <a href="<?php echo $PATH_PREFIX ?>page=components"><i class="fa fa-cogs fa-fw"></i> Components of Music Blocks <span class="fa arrow"></span></a>
         <ul class="nav nav-second-level collapse" id="mb-components-ul">
             <li>
-                <a href="<?php echo $PATH_PREFIX ?>page=main_tool">Main Toolbar<span class="fa arrow"></span></a>
+                <a href="<?php echo $PATH_PREFIX ?>page=main_tool">Main Toolbar</span></a>
             </li>
             <li>
-                <a href="<?php echo $PATH_PREFIX ?>page=auxiliary_tool">Auxiliary Toolbar<span class="fa arrow"></span></a>
+                <a href="<?php echo $PATH_PREFIX ?>page=auxiliary_tool">Auxiliary Toolbar</span></a>
             </li>
             <li>
                 <a href="<?php echo $PATH_PREFIX ?>page=palette_tool">Palette Toolbar<span class="fa arrow"></span></a>

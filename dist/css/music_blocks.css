@@ -60,3 +60,8 @@
 #menu_content > ul > li:hover{
     background-color: #dcd !important;
 }
+
+.page-content-div > div > table img{
+    height: 60px;
+    width: 60px;
+}
