@@ -1,6 +1,9 @@
 <?php
 
     $path = "";
+    $menu_title = "";
+    $menu_image = "";
+    $menu_html = "";
     $showMenu = False;
     if(isset($_GET["page"] )){
 
@@ -29,69 +32,157 @@
         else if( $page == "rhythm")
         {
             $path = "./pages/palette/rhythm.html";
+            $menu_title = "Rhythm";
+            $menu_image = "./dist/img/rhythm.png";
+            $menu_html = "./pages/palette/rhythm_block.html";
             $showMenu = True;
         }
         else if( $page == "pitch")
         {
             $path = "./pages/palette/pitch.html";
+            $menu_title = "Pitch";
+            $menu_image = "./dist/img/pitch.png";
+            $menu_html = "./pages/palette/pitch_block.html";
             $showMenu = True;
         }
-
         else if( $page == "tone")
         {
             $path = "./pages/palette/tone.html";
+            $menu_title = "Tone";
+            $menu_image = "./dist/img/tone.png";
+            $menu_html = "./pages/palette/tone_block.html";
             $showMenu = True;
         }
-
         else if( $page == "interval")
         {
             $path = "./pages/palette/interval.html";
+            $menu_title = "Interval";
+            $menu_image = "./dist/img/interval.png";
+            $menu_html = "./pages/palette/interval_block.html";
             $showMenu = True;
         }
-
         else if( $page == "drum")
         {
             $path = "./pages/palette/drum.html";
+            $menu_title = "Drum";
+            $menu_image = "./dist/img/drums.png";
+            $menu_html = "./pages/palette/drum_block.html";
             $showMenu = True;
         }
-
         else if( $page == "widget")
         {
             $path = "./pages/palette/widget.html";
+            $menu_title = "Widget";
+            $menu_image = "./dist/img/widget.png";
+            $menu_html = "./pages/palette/widget_block.html";
             $showMenu = True;
         }
 
         //graphic
         else if( $page == "palette_graphics")
+        {
             $path = "./pages/graphics/palette_graphics.html";
+        }
         else if( $page == "mouse")
+        {
             $path = "./pages/graphics/mouse.html";
+            $menu_title = "Mouse";
+            $menu_image = "./dist/img/mouse.png";
+            $menu_html = "./pages/palette/mouse_block.html";
+            $showMenu = True;
+        }
         else if( $page == "pen")
+        {
             $path = "./pages/graphics/pen.html";
+            $menu_title = "Pen";
+            $menu_image = "./dist/img/pen.png";
+            $menu_html = "./pages/palette/pen_block.html";
+            $showMenu = True;
+        }
+
         //programming
         else if( $page == "palette_program")
+        {
             $path = "./pages/program/palette_program.html";
+        }
         else if( $page == "flow")
+        {
             $path = "./pages/program/flow.html";
+            $menu_title = "Flow";
+            $menu_image = "./dist/img/flow.png";
+            $menu_html = "./pages/palette/flow_block.html";
+            $showMenu = True;
+        }
         else if( $page == "action")
+        {
             $path = "./pages/program/action.html";
+            $menu_title = "Action";
+            $menu_image = "./dist/img/action.png";
+            $menu_html = "./pages/palette/action_block.html";
+            $showMenu = True;
+        }
         else if( $page == "box")
+        {
             $path = "./pages/program/box.html";
+            $menu_title = "Box";
+            $menu_image = "./dist/img/boxes.png";
+            $menu_html = "./pages/palette/box_block.html";
+            $showMenu = True;
+        }
         else if( $page == "number")
+        {
             $path = "./pages/program/number.html";
+            $menu_title = "Number";
+            $menu_image = "./dist/img/number.png";
+            $menu_html = "./pages/palette/number_block.html";
+            $showMenu = True;
+        }
         else if( $page == "boolean")
+        {
             $path = "./pages/program/boolean.html";
+            $menu_title = "Boolean";
+            $menu_image = "./dist/img/boolean.png";
+            $menu_html = "./pages/palette/boolean_block.html";
+            $showMenu = True;
+        }
         else if( $page == "sensor")
+        {
             $path = "./pages/program/sensor.html";
+            $menu_title = "Sensor";
+            $menu_image = "./dist/img/sensor.png";
+            $menu_html = "./pages/palette/sensor_block.html";
+            $showMenu = True;
+        }
         else if( $page == "heap")
+        {
             $path = "./pages/program/heap.html";
+            $menu_title = "Heap";
+            $menu_image = "./dist/img/heap.png";
+            $menu_html = "./pages/palette/heap_block.html";
+            $showMenu = True;
+        }
+
         //extra
         else if( $page == "palette_extra")
+        {
             $path = "./pages/extra/palette_extra.html";
+        }
         else if( $page == "media")
+        {
             $path = "./pages/extra/media.html";
+            $menu_title = "Media";
+            $menu_image = "./dist/img/media.png";
+            $menu_html = "./pages/palette/media_block.html";
+            $showMenu = True;
+        }
         else if( $page == "extras")
+        {
             $path = "./pages/extra/extras.html";
+            $menu_title = "Extra";
+            $menu_image = "./dist/img/extras.png";
+            $menu_html = "./pages/palette/extra_block.html";
+            $showMenu = True;
+        }
         //tutorials
         else if( $page == "tutorial")
             $path = "./pages/tutorial/tutorial_main.html";
@@ -168,7 +259,7 @@
 
 	<footer class="footer">
       <div class="container">
-        <p align="center">© Music Blocks 2017. All rights reserved.</p>
+<!--        <p align="center">© Music Blocks 2017. All rights reserved.</p>-->
       </div>
     </footer>
 
@@ -177,5 +268,15 @@
     <script src="./vendor/metisMenu/metisMenu.min.js"></script>
     <script src="./dist/js/sb-admin-2.js"></script>
     <script src="./dist/js/menu_actions.js"></script>
+    <?php
+        if($showMenu)
+        {
+            echo '<script type="text/javascript"> showBlocks("';
+            echo $menu_title;
+            echo '","';
+            echo $menu_image;
+            echo '");</script>';
+        }
+    ?>
 </body>
 </html>

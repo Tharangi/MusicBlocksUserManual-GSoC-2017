@@ -7,7 +7,7 @@
         <a href="<?php echo $PATH_PREFIX ?>page=welcome"><i class="glyphicon "></i> Welcome</a>
     </li>
     <li>
-        <a href="<?php echo $PATH_PREFIX ?>page=get_started"><i class="fa fa-pencil-square fa-fw"></i> Getting Started <span class="fa arrow"></span></a>
+        <a href="<?php echo $PATH_PREFIX ?>page=get_started"><i class="fa fa-pencil-square fa-fw"></i> Getting Started</span></a>
     </li>
     <li>
         <a href="<?php echo $PATH_PREFIX ?>page=components"><i class="fa fa-cogs fa-fw"></i> Components of Music Blocks <span class="fa arrow"></span></a>
@@ -115,10 +115,10 @@
         </ul>
     </li>
     <li>
-        <a href="<?php echo $PATH_PREFIX ?>page=documentation"><i class="fa fa-bars fa-fw"></i> Improve Documentation<span class="fa arrow"></span></a>
+        <a href="<?php echo $PATH_PREFIX ?>page=documentation"><i class="fa fa-bars fa-fw"></i> Improve Documentation</span></a>
     </li>
     <li>
-        <a href="<?php echo $PATH_PREFIX ?>page=contribution"><i class="fa fa-wrench fa-fw"></i> Contributing to Music Blocks<span class="fa arrow"></span></a>
+        <a href="<?php echo $PATH_PREFIX ?>page=contribution"><i class="fa fa-wrench fa-fw"></i> Contributing to Music Blocks</span></a>
     </li>
     <li>
         <a href="<?php echo $PATH_PREFIX ?>page=glossary"><i class="fa fa-folder fa-fw"></i> Glossary</a>
@@ -142,10 +142,11 @@
         <li>
             <div id="menu_content">
                 <?php
-                //                    if( $page == "rhythm")
-                //                    {
-                //                        include "./pages/palette/rhythm_block.html";
-                //                    }
+                    if($showMenu)
+                    {
+                        include $menu_html;
+                    }
+
                 ?>
             </div>
         </li>

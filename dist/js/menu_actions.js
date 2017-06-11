@@ -2,8 +2,7 @@ function showBlocks(title, img) {
     document.getElementById("blocks_menu").style.visibility = "visible";
     $("#menu_header_img").attr("src",img);
     $("#menu_header_title").text(title);
-
-    $("#menu_content").load("pages/palette/rhythm_block.html");
+    $("#blocks_menu").height($(window).height()-50);
 }
 
 function hideBlocks() {
