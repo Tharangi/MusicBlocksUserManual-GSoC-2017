@@ -50,6 +50,10 @@
     margin-right: 5%;
 }
 
+#blocks_menu > ul{
+    padding-bottom: 5px;
+}
+
 #blocks_menu .manage_heights > div > i {
     float: right;
     margin-right: 5px;
