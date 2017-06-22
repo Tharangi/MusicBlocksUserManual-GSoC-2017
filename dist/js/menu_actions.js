@@ -23,4 +23,10 @@ $( function() {
         hideBlocks();
     })
 
+    $("#menu_content li:visible").click(function(){
+        $('html, body').animate({
+            scrollTop: $('#test_id').offset().top - 20
+        }, 'slow');
+    })
+
 } );
