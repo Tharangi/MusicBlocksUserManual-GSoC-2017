@@ -7,7 +7,15 @@
         <a href="<?php echo $PATH_PREFIX ?>page=welcome"><i class="glyphicon "></i> Welcome</a>
     </li>
     <li>
-        <a href="<?php echo $PATH_PREFIX ?>page=get_started"><i class="fa fa-pencil-square fa-fw"></i> Getting Started</span></a>
+        <a href="<?php echo $PATH_PREFIX ?>page=get_started"><i class="fa fa-pencil-square fa-fw"></i> Getting Started<span class="fa arrow"></span></a>
+		<ul class="nav nav-second-level collapse" id="mb-components-ul">
+            <li>
+                <a href="<?php echo $PATH_PREFIX ?>page=quick_start">Quick Start</span></a>
+            </li>
+            <li>
+                <a href="<?php echo $PATH_PREFIX ?>page=introduction">Introduction to Music Blocks</span></a>
+            </li>
+		</ul>
     </li>
     <li>
         <a href="<?php echo $PATH_PREFIX ?>page=components"><i class="fa fa-cogs fa-fw"></i> Components of Music Blocks <span class="fa arrow"></span></a>
