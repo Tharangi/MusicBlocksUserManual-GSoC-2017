@@ -24,8 +24,9 @@ $( function() {
     })
 
     $("#menu_content li:visible").click(function(){
+        $clickedIndex = $(this).index();
         $('html, body').animate({
-            scrollTop: $('#test_id').offset().top - 20
+            scrollTop: $(".content_table tr").eq($clickedIndex).offset().top - 50
         }, 'slow');
     })
 
