@@ -79,3 +79,12 @@
 .blocks-description > div > table td:first-child{
     width: 20%;
 }
+
+#intro_table img{
+    max-height:10%;
+    cursor: pointer;
+}
+
+#introduction_page li{
+    margin-bottom: 10px;
+}
