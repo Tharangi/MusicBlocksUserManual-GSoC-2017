@@ -11,6 +11,10 @@ function hideBlocks() {
 
 $( function() {
 
+    $( window ).resize(function() {
+        $("#blocks_menu").height($(window).height()-50);
+    });
+
     $('#expand-one').click(function(){
         $("#mb-palette-music-ul").collapse("show");
         $($("#mb-palette-music-ul").parents('ul[id^=mb]').get().reverse()).each(function (index) {
