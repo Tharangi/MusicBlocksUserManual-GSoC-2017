@@ -36,7 +36,7 @@
                                 <a href="<?php echo $PATH_PREFIX ?>page=rhythm" onclick="showBlocks('Rhythm', './dist/img/rhythm.png' )"><img src="./dist/img/rhythm.png" class="img_btn_icon" ><span>Rhythm</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=pitch" onclick="showBlocks('Pitch', './dist/img/pitch.png' )"><img src="./dist/img/rhythm.png" class="img_btn_icon" ><span>Pitch</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=pitch" onclick="showBlocks('Pitch', './dist/img/pitch.png' )"><img src="./dist/img/pitch.png" class="img_btn_icon" ><span>Pitch</span></a>
                             </li>
                             <li>
                                 <a href="<?php echo $PATH_PREFIX ?>page=tone" onclick="showBlocks('Tone', './dist/img/tone.png' )"><img src="./dist/img/tone.png" class="img_btn_icon" ><span>Tone</span></a>
