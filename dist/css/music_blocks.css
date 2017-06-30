@@ -88,3 +88,27 @@
 #introduction_page li{
     margin-bottom: 10px;
 }
+
+#quickstart_page #animation{
+    width: 100%;
+}
+
+#quickstart_page span{
+    font-size: 30px;
+    font-weight: inherit;
+}
+
+#quickstart_page table span{
+    font-size: 16px;
+    display: inherit;
+}
+
+#quickstart_page table img{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#quickstart_page table td{
+    text-align: justify;
+}
+

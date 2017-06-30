@@ -1,14 +1,3 @@
-// function showBlocks(title, img) {
-//     document.getElementById("blocks_menu").style.visibility = "visible";
-//     $("#menu_header_img").attr("src",img);
-//     $("#menu_header_title").text(title);
-//     $("#blocks_menu").height($(window).height()-50);
-// }
-//
-// function hideBlocks() {
-//     document.getElementById("blocks_menu").style.visibility = "hidden";
-// }
-
 function showBlocks(title, img) {
     $("#navigation_bar").animate({"width": "0px"});
     $("#blocks_menu").show();
