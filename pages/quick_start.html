@@ -1,101 +1,329 @@
 <div class="row" id="quickstart_page">
     <div class="col-lg-12">
-        <h1 class="page-header">Hello World: Music Blocks</h1>
-        <p class="text-justify">
-            This guide gives a quick introduction of how to create music with Music Blocks. Users will be shown how to combine various blocks which depict core concepts of music such as note and pitch. These blocks can be used in conjunction with logic and flow blocks such as action, start, and repeat to make and modify sounds.
-        </p>
-        <br>
-        <p><span>Your first program </span><i>with Hot Cross Buns</i></p>
-
-        <div>
-            <img src="./dist/img/quick_start/hot_cross_bun.png">
-            <button type="button" class="btn btn-primary">Play Song</button>
+        <h1 class="page-header">Quick Start</h1>
+        <div id="intro">
+            <p class="text-justify">
+                Interested in getting started right away? This quick start guide will walk through how to create simple
+                melodies in Music Blocks. A melody is comprised of a series of notes. Notes are pitches with specified
+                rhythmic values, and these notes are strung together in patterns to create melody. Melodies can be
+                familiar or unpredictable, simple or complex—the choice is yours. For this guide, we will start with the
+                simple melody “Hot Cross Buns”. The guide will walk you through the function of:
+            <ul class="text-justify">
+                <li>
+                    How to create a voice.
+                </li>
+                <li>
+                    How to create notes and modify their pitches and rhythms.
+                </li>
+                <li>
+                    How to use the action block and repeat block to create melodic structure.
+                </li>
+            </ul>
+            <div class="row" id="hcb_solfege">
+                <div class="col-md-10 col-md-offset-1">
+                    <img src="./dist/img/quick_start/hot_cross_bun.png">
+                </div>
+            </div>
+            <br/>
+            <div>
+                This is what it will sound like when complete!
+                <audio controls>
+                    <source src="./dist/resources/hcb.mp3" type="audio/mpeg">
+                </audio>
+            </div>
         </div>
-        <br>
-        <div>
-            <img id="animation" src="./dist/img/quick_start/HCB_with_animation.gif">
+        <br/>
+        <div id="section_1">
+            <p>
+            <h2>1. Voice in Music Blocks, our Mouse Performers</h2></p>
+            <br/>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <img id="desktop" src="./dist/img/quick_start/musib_blocks_desktop.png">
+                </div>
+            </div>
+            <br/>
+            <p class="text-justify">
+                Here is how the program runs:
+            <ul class="text-justify">
+                <li>Mouse glyph (icon) is the performer.</li>
+                <li>Mouse glyph performs whatever is in its <a href="#section4_startblock_desc">Start Block</a>. It is
+                    like a performing musician who is reading their part.
+                </li>
+                <li>There can be one or more start blocks in the workspace, each having it's own performer(mouse icons
+                    in different colours). When the <a href="#section_5">play button</a> is clicked(in the main
+                    toolbar), all performers start playing music, which is the content in it's start block
+                </li>
+            </ul>
+
+            </p>
         </div>
 
         <br/>
-        <br/>
-        <p><h2>Things you need to know:</h2></p>
+
+        <div id="section_2">
+            <p>
+            <h2>2. Hello world in Music Blocks: Three Note Blocks</h2></p>
+            <br/>
+            <p class="text-justify">
+                “Hello World” is the most basic code that a programmer learns to write. Following is a sample code
+                written using a programming language:
+                <br/>
+                <span><mark>print "Hello world!"</mark></span>
+                <br/>
+                output of this program will be printing the text:
+                <mark><i>Hello world!</i></mark>
+                .
+                <br/><br/>
+                In this case, the “performer” is the computer. The user has told the computer to “perform” the task of
+                printing the letters “Hello World” on the screen. The “cue” for the performance is the moment when the
+                user presses the Return/Enter key, to tell the computer to perform the given script.
+                <br/><br/>
+                Music Blocks works in such the same manner, but with notes and rhythms. Let's start by making one of the
+                most basic melodies we can, comprised of only three notes—the first three notes of “Hot Cross Buns”!
+            </p>
+            <div class="row">
+                <div class="col-md-4">
+                    <p class="text-center"><b>ti</b></p>
+                    <img src="./dist/img/quick_start/ti.png">
+                </div>
+                <div class="col-md-4">
+                    <p class="text-center"><b>la</b></p>
+                    <img src="./dist/img/quick_start/la.png">
+                </div>
+                <div class="col-md-4">
+                    <p class="text-center"><b>sol</b></p>
+                    <img src="./dist/img/quick_start/sol.png">
+                </div>
+            </div>
+            <br/>
+            <p class="text-justify">Following shows how to create the other two notes, each note <a href="#section_3">repeating</a>
+                for four times</p>
+            <div class="row">
+                <div class="col-md-4 col-md-offset-2">
+                    <p class="text-center"><b>sol</b></p>
+                    <img src="./dist/img/quick_start/repeat_sol.png">
+                </div>
+                <div class="col-md-4">
+                    <p class="text-center"><b>la</b></p>
+                    <img src="./dist/img/quick_start/repeat_la.png">
+                </div>
+            </div>
+        </div>
+
         <br/>
 
-        <table class="table content_table">
-            <tr>
-                <td><span><i>Note value block:</i></span><img src="./dist/img/quick_start/note_value.png"></td>
-                <td>Note value block is the fundamental block used to create music. It specifies the duration (note value) of the whatever is inserted inside its clamp (typically one or more Pitch blocks).
-                </td>
-            </tr>
-            <tr>
-                <td><span><i>Pitch block:</i></span><img src="./dist/img/quick_start/pitch.png"></td>
-                <td>
-                    Pitch blocks are used inside the Note value blocks to specify a pitch name and pitch octave of a note. The name and octave in combination determine the frequency (and therefore pitch) of the note that is played. (When multiple Pitch blocks are used inside of a Note value block, a chord is played.)
-                </td>
-            </tr>
-            <tr>
-                <td><span><i>Start block:</i></span><img src="./dist/img/quick_start/start.png"></td>
-                <td>Every Music Blocks project requires at least one Start block. Any blocks placed inside the clamp of a Start block are played sequentially from top to bottom when either the Start block or the Run button are clicked. If there are multiple Start blocks, all of them will run concurrently when the Run button is clicked. (This is a simple way to play multiple voices at once.).
-                </td>
-            </tr>
-            <tr>
-                <td><span><i>Action block:</i></span><img src="./dist/img/quick_start/action.png"></td>
-                <td>The clamp of an Action block contains a sequence of blocks that will only be executed from top to bottom when the Action block is referenced by its corresponding named block (See <a href="#quickstart_chunk">chunk</a> below).
-                    <br/><br/>Action blocks are useful for encapsulating phases (“chunks” of notes) of music when composing more complex themes.
-                </td>
-            </tr>
-            <tr>
-                <td id="quickstart_chunk"><span><i>Chunk block:</i></span>
-                    <img src="./dist/img/quick_start/chunk.png"><img src="./dist/img/quick_start/chunk_1.png">
-                </td>
-                <td>Whenever a new Action block is created, a corresponding named block called “action” is automatically created. This block can be used as a reference to the Action block. Whenever an Action block is created, its named reference block is automatically added to the “Action” palette, where it can be selected and used as often as needed.
-                    <br/><br/>The name of the action can be changed by changing the label of the Action block, for example, to “chunk”. By this mechanism, you can chose a unique name for each phrase of music (chunk of notes).
-                </td>
-            </tr>
-            <tr>
-                <td><span><i>Repeat block:</i></span><img src="./dist/img/quick_start/repeat.png"></td>
-                <td>When a phase of music needs to be played repeatedly, a Repeat block can be used.
-                </td>
-            </tr>
-        </table>
+        <div id="section_3">
+            <p>
+            <h2>3. Melodic Structure: Action and Repeat Blocks</h2></p>
+            <br/>
+            <p class="text-justify">
+                Following demonstrates how we can use action and repeat blocks to create structure for our melodic
+                material created in the previous section.
+            </p>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <img src="./dist/img/quick_start/repeat_action.gif">
+                </div>
+            </div>
+            <br/>
+            <p class="text-justify">Finished Code! Below is an overview of the entire process</p>
+            <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <img src="./dist/img/quick_start/hot_cross_animation.gif">
+                </div>
+            </div>
+            <br/>
+            <p class="text-justify">
+                Congratulations—You have made your first melody with Music Blocks!
+                <br/>
+                Now that you have made a simple melody with Music Blocks, you might try the following creative
+                exercises:
+
+            <ul class="text-justify">
+                <li>
+                    Changing the order of the action blocks
+                </li>
+                <li>
+                    Changing the placement of the repeat blocks and how many times they repeat
+                </li>
+                <li>
+                    Changing the pitches
+                </li>
+                <li>
+                    Changing the note values
+                </li>
+            </ul>
+
+            Each time you change something press RUN and listen to the results. What does it sound like? Do you like it?
+            How would you describe the resulting sound? You will probably find versions that you like and versions that
+            sound just plain silly—just try it out the possibilities!
+        </div>
 
         <br/>
+
+        <div id="section_4">
+            <p>
+            <h2>4. Important Details: Definitions of the Blocks</h2></p>
+            <br/>
+
+            <table class="table content_table">
+                <tr>
+                    <td><span><i>Note value block:</i></span><img src="./dist/img/quick_start/note_value.png"></td>
+                    <td>Note value block is the fundamental block used to create music. It specifies the duration (note
+                        value or rhythmic value) of the whatever is inserted inside its clamp (typically one or more
+                        Pitch blocks).
+                    </td>
+                </tr>
+                <tr>
+                    <td><span><i>Pitch block:</i></span><img src="./dist/img/quick_start/pitch.png"></td>
+                    <td>
+                        Pitch blocks are used inside the Note value blocks to specify a pitch name and pitch octave of a
+                        note. The name and octave in combination determine the frequency (and therefore pitch) of the
+                        note
+                        that is played. (When multiple Pitch blocks are used inside of a Note value block, a chord is
+                        played.)
+                    </td>
+                </tr>
+                <tr id="section4_startblock_desc">
+                    <td><span><i>Start block:</i></span><img src="./dist/img/quick_start/start.png"></td>
+                    <td>Every Music Blocks project requires at least one Start block. Any blocks placed inside the clamp
+                        of
+                        a Start block are played sequentially from top to bottom when either the Start block or the Run
+                        button are clicked. If there are multiple Start blocks, all of them will run concurrently when
+                        the
+                        Run button is clicked. (This is a simple way to play multiple voices at once.).
+                    </td>
+                </tr>
+                <tr>
+                    <td><span><i>Action block:</i></span><img src="./dist/img/quick_start/action.png"></td>
+                    <td>The clamp of an Action block contains a sequence of blocks that will only be executed from top
+                        to
+                        bottom when the Action block is referenced by its corresponding named block (See <a
+                                href="#quickstart_chunk">chunk</a> below).
+                        <br/><br/>Action blocks are useful for encapsulating phases (“chunks” of notes) of music when
+                        composing more complex themes.
+                    </td>
+                </tr>
+                <tr>
+                    <td id="quickstart_chunk"><span><i>Chunk block:</i></span>
+                        <img src="./dist/img/quick_start/chunk.png"><img src="./dist/img/quick_start/chunk_1.png">
+                    </td>
+                    <td>Whenever a new Action block is created, a corresponding named block called “action” is
+                        automatically
+                        created. This block can be used as a reference to the Action block. Whenever an Action block is
+                        created, its named reference block is automatically added to the “Action” palette, where it can
+                        be
+                        selected and used as often as needed.
+                        <br/><br/>The name of the action can be changed by changing the label of the Action block, for
+                        example, to “chunk”. By this mechanism, you can chose a unique name for each phrase of music
+                        (chunk
+                        of notes).
+                    </td>
+                </tr>
+                <tr>
+                    <td><span><i>Repeat block:</i></span><img src="./dist/img/quick_start/repeat.png"></td>
+                    <td>When a phase of music needs to be played repeatedly, a Repeat block can be used.
+                    </td>
+                </tr>
+            </table>
+        </div>
+
         <br/>
-        <p><h2>Music blocks desktop:</h2></p>
-        <br/>
-        <p>
-            Music blocks has three toolbars:
+
+        <div id="section_5">
+            <p>
+            <h2>5. Music Block Workspace: Navigating the Toolbars and Palettes</h2></p>
+            <br/>
+            <p>
+                Music blocks has three toolbars:
             <ul class="text-justify">
                 <li>
                     Main toolbar is for run/debug purposes which is on top of the workspace.
                 </li>
                 <li>
-                    The toolbar on the right of the workspace is the Auxiliary toolbar is for managing projects and to control the workspace.
+                    The toolbar on the right of the workspace is the Auxiliary toolbar is for managing projects and to
+                    control the workspace.
                 </li>
                 <li>
-                    Palette toolbar is the most important which contains all building blocks for creating music which is on the left side of the workspace.
+                    Palette toolbar is the most important which contains all building blocks for creating music which is
+                    on
+                    the left side of the workspace.
                 </li>
             </ul>
-        </p>
 
-        <br/>
+            <br/>
 
-        <p>
-            Essentials to create music in music blocks:
+            <p>
+                Essentials to create music in music blocks:
             <dl class="text-justify">
                 <dt>Rhythm Palette:</dt>
-                <dd>&emsp;&ensp;The Rhythm Palette contains blocks used to play music. Stacks of notes can be created using the Pitch block and the blocks on this palette. In addition to creating notes, you can transform the rhythmic value of notes using blocks such as dot, tie, duplicate notes, or multiply beat.</dd>
+                <dd>&emsp;&ensp;The Rhythm Palette contains blocks used to play music. Stacks of notes can be created
+                    using
+                    the Pitch block and the blocks on this palette. In addition to creating notes, you can transform the
+                    rhythmic value of notes using blocks such as dot, tie, duplicate notes, or multiply beat.
+                </dd>
                 <br/>
                 <dt>Pitch Palette:</dt>
-                <dd>&emsp;&ensp;The Pitch Palette contains blocks used to create and modify pitches used by the Note block.</dd>
+                <dd>&emsp;&ensp;The Pitch Palette contains blocks used to create and modify pitches used by the Note
+                    block.
+                </dd>
                 <br/>
-                <dt>Running the project:</dt>
-                <dd>&emsp;&ensp;The main toolbar contain several running modes, run in normal speed and slower speeds(for debugging).</dd>
+                <dt>There are few more palettes which does various functions:</dt>
+                <dd>
+                    <ul>Palettes for Music
+                        <li>Tone Palette</li>
+                        <li>Intervals Palette</li>
+                        <li>Drums Palette</li>
+                        <li>Widgets Palette</li>
+                    </ul>
+                </dd>
+                <dd>
+                    <ul>Palettes for Graphics
+                        <li>Mouse Palette</li>
+                        <li>Pen Palette</li>
+                    </ul>
+                </dd>
+                <dd>
+                    <ul>Palettes for Programming
+                        <li>Flow Palette</li>
+                        <li>Action Palette</li>
+                        <li>Boxes Palette</li>
+                        <li>Number Palette</li>
+                        <li>Boolean Palette</li>
+                        <li>Sensors Palette</li>
+                        <li>Heap Palette</li>
+                    </ul>
+                </dd>
+                <dd>
+                    <ul>Extra Widgets
+                        <li>Medium Palette</li>
+                        <li>Extras Palette</li>
+                    </ul>
+                </dd>
+                <br/>
+                <dt>Running the project in different ways:</dt>
+                <dd>&emsp;&ensp;The main toolbar contain several running modes, run in normal speed and slower
+                    speeds(for
+                    debugging).
+                </dd>
                 <br/>
                 <dt>Deleting blocks:</dt>
-                <dd>&emsp;&ensp;Long press on the required block, then a recycle bin will appear on the bottom of the music blocks workspace. Then drag the mouse over the recycle bin while pressing down the mouse button, once the colour of the recycle bin changes to red, simply release the mouse.Else delete all button of the auxiliary toolbar can be used to remove everything on the workspace.</dd>
+                <dd>&emsp;&ensp;Long press on the required block, then a recycle bin will appear on the bottom of the
+                    music blocks workspace.
+                </dd>
+                <br/>
+                <dt>Trash:</dt>
+                <dd>&emsp;&ensp;Then drag the mouse over the recycle bin while pressing down the mouse button, once the
+                    colour of the recycle bin changes to red, simply release the mouse.
+                    <br/>
+                    &emsp;&ensp;The other way to delete is to use the “delete all” button of the auxiliary toolbar can
+                    be used to remove everything on the workspace.
+                </dd>
             </dl>
-        </p>
+            </p>
+
+        </div>
 
     </div>
 </div>
