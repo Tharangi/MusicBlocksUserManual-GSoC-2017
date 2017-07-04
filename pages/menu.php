@@ -13,6 +13,9 @@
                 <a href="<?php echo $PATH_PREFIX ?>page=quick_start">Quick Start</span></a>
             </li>
             <li>
+                <a href="<?php echo $PATH_PREFIX ?>page=quick_start_new">Quick Start New</span></a>
+            </li>
+            <li>
                 <a href="<?php echo $PATH_PREFIX ?>page=introduction">Introduction to Music Blocks</span></a>
             </li>
 		</ul>

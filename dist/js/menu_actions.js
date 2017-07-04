@@ -1,3 +1,10 @@
+var shiftWindow = function() 
+{ 
+	scrollBy(0, -50) 
+};
+if (location.hash) shiftWindow();
+window.addEventListener("hashchange", shiftWindow);
+
 function showBlocks(title, img) {
     $("#navigation_bar").animate({"width": "0px"});
     $("#blocks_menu").show();
@@ -37,6 +44,5 @@ $( function() {
         $('html, body').animate({
             scrollTop: $(".content_table tr").eq($clickedIndex).offset().top - 50
         }, 'slow');
-    })
-
+    })	
 } );
