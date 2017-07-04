@@ -36,22 +36,22 @@
                         <a href="<?php echo $PATH_PREFIX ?>page=palette_music">Palettes for Music<span class="fa arrow"></span></a>
                         <ul class="nav nav-fourth-level collapse" id="mb-palette-music-ul">
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=rhythm" onclick="showBlocks('Rhythm', './dist/img/rhythm.png' )"><img src="./dist/img/rhythm.png" class="img_btn_icon" ><span>Rhythm</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=rhythm"><img src="./dist/img/rhythm.png" class="img_btn_icon" ><span>Rhythm</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=pitch" onclick="showBlocks('Pitch', './dist/img/pitch.png' )"><img src="./dist/img/pitch.png" class="img_btn_icon" ><span>Pitch</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=pitch"><img src="./dist/img/pitch.png" class="img_btn_icon" ><span>Pitch</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=tone" onclick="showBlocks('Tone', './dist/img/tone.png' )"><img src="./dist/img/tone.png" class="img_btn_icon" ><span>Tone</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=tone"><img src="./dist/img/tone.png" class="img_btn_icon" ><span>Tone</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=interval" onclick="showBlocks('Intervals', './dist/img/intervals.png' )"><img src="./dist/img/intervals.png" class="img_btn_icon" ><span>Intervals</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=interval"><img src="./dist/img/intervals.png" class="img_btn_icon" ><span>Intervals</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=drum" onclick="showBlocks('Drums', './dist/img/drums.png' )"><img src="./dist/img/drums.png" class="img_btn_icon" ><span>Drums</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=drum"><img src="./dist/img/drums.png" class="img_btn_icon" ><span>Drums</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=widget" onclick="showBlocks('Widgets', './dist/img/widgets.png' )"><img src="./dist/img/widget.png" class="img_btn_icon" ><span>Widgets</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=widget"><img src="./dist/img/widget.png" class="img_btn_icon" ><span>Widgets</span></a>
                             </li>
                         </ul>
                     </li>
@@ -59,10 +59,10 @@
                         <a href="<?php echo $PATH_PREFIX ?>page=palette_graphics">Palettes for Graphics<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level" id="mb-palette-graph-ul">
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=mouse" onclick="showBlocks('Mouse', './dist/img/mouse.png' )"><img src="./dist/img/mouse.png" class="img_btn_icon" ><span>Mouse</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=mouse"><img src="./dist/img/mouse.png" class="img_btn_icon" ><span>Mouse</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=pen" onclick="showBlocks('Pen', './dist/img/pen.png' )"><img src="./dist/img/pen.png" class="img_btn_icon" ><span>Pen</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=pen"><img src="./dist/img/pen.png" class="img_btn_icon" ><span>Pen</span></a>
                             </li>
                         </ul>
                     </li>
@@ -70,25 +70,25 @@
                         <a href="<?php echo $PATH_PREFIX ?>page=palette_program">Palettes for Programming<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level" id="mb-palette-program-ul">
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=flow" onclick="showBlocks('Flow', './dist/img/flow.png' )"><img src="./dist/img/flow.png" class="img_btn_icon" ><span>Flow</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=flow"><img src="./dist/img/flow.png" class="img_btn_icon" ><span>Flow</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=action" onclick="showBlocks('Action', './dist/img/action.png' )"><img src="./dist/img/action.png" class="img_btn_icon" ><span>Action</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=action"><img src="./dist/img/action.png" class="img_btn_icon" ><span>Action</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=box" onclick="showBlocks('Boxes', './dist/img/boxes.png' )"><span><img src="./dist/img/boxes.png" class="img_btn_icon" >Boxes</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=box"><span><img src="./dist/img/boxes.png" class="img_btn_icon" >Boxes</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=number" onclick="showBlocks('Number', './dist/img/number.png' )"><img src="./dist/img/number.png" class="img_btn_icon" ><span>Number</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=number"><img src="./dist/img/number.png" class="img_btn_icon" ><span>Number</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=boolean" onclick="showBlocks('Boolean', './dist/img/boolean.png' )"><img src="./dist/img/boolean.png" class="img_btn_icon" ><span>Boolean</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=boolean"><img src="./dist/img/boolean.png" class="img_btn_icon" ><span>Boolean</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=sensor" onclick="showBlocks('Sensors', './dist/img/sensor.png' )"><img src="./dist/img/sensor.png" class="img_btn_icon" ><span>Sensors</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=sensor"><img src="./dist/img/sensor.png" class="img_btn_icon" ><span>Sensors</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=heap" onclick="showBlocks('Heap', './dist/img/heap.png' )"><img src="./dist/img/heap.png" class="img_btn_icon" ><span>Heap</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=heap"><img src="./dist/img/heap.png" class="img_btn_icon" ><span>Heap</span></a>
                             </li>
                         </ul>
                     </li>
@@ -96,10 +96,10 @@
                         <a href="<?php echo $PATH_PREFIX ?>page=palette_extra">Extra Widgets<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level" id="mb-palette-extra-ul">
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=media" onclick="showBlocks('Media', './dist/img/media.png' )"><img src="./dist/img/media.png" class="img_btn_icon" ><span>Media</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=media"><img src="./dist/img/media.png" class="img_btn_icon" ><span>Media</span></a>
                             </li>
                             <li>
-                                <a href="<?php echo $PATH_PREFIX ?>page=extras" onclick="showBlocks('Extras', './dist/img/extras.png' )"><img src="./dist/img/extras.png" class="img_btn_icon" ><span>Extras</span></a>
+                                <a href="<?php echo $PATH_PREFIX ?>page=extras"><img src="./dist/img/extras.png" class="img_btn_icon" ><span>Extras</span></a>
                             </li>
                         </ul>
                     </li>
