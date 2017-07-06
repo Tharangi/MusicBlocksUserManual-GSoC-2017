@@ -11,7 +11,7 @@ function showBlocks(title, img) {
     $("#blocks_menu").animate({"margin-left": "0px", "width": "260px"});
     $("#menu_header_img").attr("src",img);
     $("#menu_header_title").text(title);
-    $("#blocks_menu").height($(window).height()-50);
+    $("#blocks_menu_content").height($(window).height()-85);
 }
 
 function hideBlocks() {
@@ -24,7 +24,7 @@ function hideBlocks() {
 $( function() {
 
     $( window ).resize(function() {
-        $("#blocks_menu").height($(window).height()-50);
+        $("#blocks_menu_content").height($(window).height()-85);
     });
 
     $('#expand-one').click(function(){
@@ -34,10 +34,6 @@ $( function() {
         })
 
     });
-
-    $("#page-wrapper").click(function () {
-        hideBlocks();
-    })
 
     $("#menu_content li:visible").click(function(){
         $clickedIndex = $(this).index();

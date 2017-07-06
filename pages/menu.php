@@ -143,13 +143,12 @@
 </ul>
 
 <div id="blocks_menu" style="<?php if($showMenu){echo 'visibility: visible';} else{ echo 'visibility: hidden';}  ?>">
+    <div id="blocks_menu_header">
+        <img id="menu_header_img" class="images"/><span id="menu_header_title"></span>
+        <i class="fa fa-times" onclick="hideBlocks()"></i>
+    </div>
+    <div id="blocks_menu_content">
     <ul class="nav">
-        <li class="manage_heights">
-            <div>
-                <img id="menu_header_img" class="images"/><span id="menu_header_title"></span>
-                <i class="fa fa-times" onclick="hideBlocks()"></i>
-            </div>
-        </li>
         <li>
             <div id="menu_content">
                 <?php
@@ -162,4 +161,5 @@
             </div>
         </li>
     </ul>
+    </div>
 </div>
