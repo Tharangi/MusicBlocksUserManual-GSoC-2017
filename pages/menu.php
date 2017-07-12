@@ -115,6 +115,9 @@
         <a href="<?php echo $PATH_PREFIX ?>page=example"><i class="fa fa-music fa-fw"></i> Examples with Music Blocks<span class="fa arrow"></span></a>
         <ul class="nav nav-second-level">
             <li>
+                <a href="<?php echo $PATH_PREFIX ?>page=hcb">Hot Cross Buns</a>
+            </li>
+            <li>
                 <a href="<?php echo $PATH_PREFIX ?>page=example_twinkle">Twinkle Twinkle Little Star</a>
             </li>
             <li>

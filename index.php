@@ -195,6 +195,8 @@
         //examples
         else if( $page == "example")
             $path = "./pages/example/example_main.html";
+        else if( $page == "hcb")
+            $path = "./pages/example/example_hcb.html";
         else if( $page == "example_twinkle")
             $path = "./pages/example/example_twinkle.html";
         //documentation
