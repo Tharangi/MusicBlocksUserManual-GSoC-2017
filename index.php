@@ -1,4 +1,7 @@
 <?php
+//    require('./libs/fpdf.php');
+//    require('./libs/WriteHTML.php');
+require_once('pdf_generator.php');
 
     $path = "";
     $menu_title = "";
@@ -10,7 +13,7 @@
         $page = strval($_GET["page"]);
         //welcome
         if( $page == "welcome" )
-            $path = "./pages/welcome.html";
+            $path = "./pages/welcome.php";
         //getting started
         else if( $page == "get_started")
             $path = "./pages/get_started.html";
@@ -214,9 +217,12 @@
         //credits
         else if( $page == "credits")
             $path = "./pages/credits.html";
+        //download pdf user guide
+        else if( $page == "download_pdf")
+            generatePDFUserGuide();
     }
     else{
-        $path = "./pages/welcome.html";
+        $path = "./pages/welcome.php";
     }
 ?>
 
