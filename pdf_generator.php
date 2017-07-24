@@ -26,6 +26,8 @@ function generatePDFUserGuide(){
     addPage($pdf, "./pages/introduction.html");
     addPage($pdf, "./pages/main_tool.html");
     addPage($pdf, "./pages/auxiliary_tool.html");
+	  addPage($pdf, "./pages/graphics/pen.html");
+	
 
     $pdf->Output('Music Blocks User Guide.pdf', 'I');
 
