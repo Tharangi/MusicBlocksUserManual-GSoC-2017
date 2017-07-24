@@ -114,7 +114,7 @@ define ('PDF_HEADER_TITLE', 'Music Blocks User Guide');
 /**
  * Header description string.
  */
-define ('PDF_HEADER_STRING', "http://walterbender.github.io/musicblocks");
+define ('PDF_HEADER_STRING', "http://walterbender.github.io/musicblocks\nhttp://www.musicblocks.net");
 
 /**
  * Document unit of measure [pt=point, mm=millimeter, cm=centimeter, in=inch].
