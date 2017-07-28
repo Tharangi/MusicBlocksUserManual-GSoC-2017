@@ -10,7 +10,7 @@
                 <p>
                     <center>
                         <a class="btn btn-primary btn-lg" href="https://codeload.github.com/walterbender/musicblocks/zip/master" target="_blank" role="button" align="left">Download Music Blocks</a>
-                        <a class="btn btn-primary btn-lg" href="<?php echo $PATH_PREFIX ?>page=download_pdf"  role="button" align="right">
+                        <a class="btn btn-primary btn-lg" href="<?php echo $PATH_PREFIX ?>page=download_pdf" id="download_pdf" role="button" align="right">
                             Download User Guide
                         </a>
                     </center>

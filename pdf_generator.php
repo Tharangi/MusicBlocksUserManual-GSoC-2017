@@ -26,9 +26,25 @@ function generatePDFUserGuide(){
     addPage($pdf, "./pages/introduction.html");
     addPage($pdf, "./pages/main_tool.html");
     addPage($pdf, "./pages/auxiliary_tool.html");
+    addPage($pdf, "./pages/palette/rhythm.html");
+    addPage($pdf, "./pages/palette/pitch.html");
+    addPage($pdf, "./pages/palette/tone.html");
+    addPage($pdf, "./pages/palette/interval.html");
+    addPage($pdf, "./pages/palette/drum.html");
+    addPage($pdf, "./pages/palette/widget.html");
+    addPage($pdf, "./pages/graphics/mouse.html");
+    addPage($pdf, "./pages/graphics/pen.html");
+    addPage($pdf, "./pages/program/flow.html");
+    addPage($pdf, "./pages/program/action.html");
+    addPage($pdf, "./pages/program/box.html");
+    addPage($pdf, "./pages/program/number.html");
+    addPage($pdf, "./pages/program/boolean.html");
+    addPage($pdf, "./pages/program/sensor.html");
+    addPage($pdf, "./pages/program/heap.html");
+    addPage($pdf, "./pages/extra/media.html");
+    addPage($pdf, "./pages/extra/heap.html");
 
     $pdf->Output('Music Blocks User Guide.pdf', 'I');
-
 
 }
 
