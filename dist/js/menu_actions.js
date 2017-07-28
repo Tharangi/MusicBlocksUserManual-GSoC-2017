@@ -40,5 +40,10 @@ $( function() {
         $('html, body').animate({
             scrollTop: $(".content_table tr").eq($clickedIndex).offset().top - 50
         }, 'slow');
-    })	
+    });
+
+    // $("#download_pdf").click(function () {
+        // $(this).toggleClass("glyphicon glyphicon-refresh glyphicon-refresh-animate");
+    // });
+
 } );
