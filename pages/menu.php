@@ -117,15 +117,6 @@
             <li>
                 <a href="<?php echo $PATH_PREFIX ?>page=hcb">Hot Cross Buns</a>
             </li>
-            <li>
-                <a href="<?php echo $PATH_PREFIX ?>page=example_twinkle">Twinkle Twinkle Little Star</a>
-            </li>
-            <li>
-                <a href="#">Baa Baa Black Sheep</a>
-            </li>
-            <li>
-                <a href="#">Three Little Kittens Drums</a>
-            </li>
         </ul>
     </li>
     <li>
