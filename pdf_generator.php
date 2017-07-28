@@ -23,8 +23,8 @@ function generatePDFUserGuide(){
     $pdf->SetFont('helvetica', '', 10);
 
     addPage($pdf, "./pages/quick_start.html");
-    addPage($pdf, "./pages/introduction.html");
-    addPage($pdf, "./pages/main_tool.html");
+//    addPage($pdf, "./pages/introduction.html");
+//    addPage($pdf, "./pages/main_tool.html");
     addPage($pdf, "./pages/auxiliary_tool.html");
     addPage($pdf, "./pages/palette/rhythm.html");
     addPage($pdf, "./pages/palette/pitch.html");
