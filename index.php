@@ -40,7 +40,7 @@ require_once('pdf_generator.php');
             $path = "./pages/palette/palette_music.html";
         else if( $page == "rhythm")
         {
-            $path = "./pages/palette/rhythm.html";
+            $path = "./pages/music/rhythm.html";
             $menu_title = "Rhythm";
             $menu_image = "./dist/img/rhythm.png";
             $menu_html = "./pages/palette/rhythm_block.html";
@@ -48,7 +48,7 @@ require_once('pdf_generator.php');
         }
         else if( $page == "pitch")
         {
-            $path = "./pages/palette/pitch.html";
+            $path = "./pages/music/pitch.html";
             $menu_title = "Pitch";
             $menu_image = "./dist/img/pitch.png";
             $menu_html = "./pages/palette/pitch_block.html";
@@ -56,7 +56,7 @@ require_once('pdf_generator.php');
         }
         else if( $page == "tone")
         {
-            $path = "./pages/palette/tone.html";
+            $path = "./pages/music/tone.html";
             $menu_title = "Tone";
             $menu_image = "./dist/img/tone.png";
             $menu_html = "./pages/palette/tone_block.html";
@@ -64,7 +64,7 @@ require_once('pdf_generator.php');
         }
         else if( $page == "interval")
         {
-            $path = "./pages/palette/interval.html";
+            $path = "./pages/music/interval.html";
             $menu_title = "Interval";
             $menu_image = "./dist/img/intervals.png";
             $menu_html = "./pages/palette/interval_block.html";
@@ -72,7 +72,7 @@ require_once('pdf_generator.php');
         }
         else if( $page == "drum")
         {
-            $path = "./pages/palette/drum.html";
+            $path = "./pages/music/drum.html";
             $menu_title = "Drum";
             $menu_image = "./dist/img/drums.png";
             $menu_html = "./pages/palette/drum_block.html";
@@ -80,7 +80,7 @@ require_once('pdf_generator.php');
         }
         else if( $page == "widget")
         {
-            $path = "./pages/palette/widget.html";
+            $path = "./pages/music/widget.html";
             $menu_title = "Widget";
             $menu_image = "./dist/img/widget.png";
             $menu_html = "./pages/palette/widget_block.html";
@@ -261,7 +261,11 @@ require_once('pdf_generator.php');
 
         <div id="page-wrapper">
             <div class="container-fluid" id="content_div" >
-                <?php include $path; ?>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <?php include $path; ?>
+                    </div>
+                </div>
             </div>
         </div>
 

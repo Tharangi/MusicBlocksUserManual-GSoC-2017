@@ -22,16 +22,16 @@ function generatePDFUserGuide(){
 
     $pdf->SetFont('helvetica', '', 10);
 
-    addPage($pdf, "./pages/quick_start.html");
+//    addPage($pdf, "./pages/quick_start.html");
 //    addPage($pdf, "./pages/introduction.html");
-//    addPage($pdf, "./pages/main_tool.html");
+    addPage($pdf, "./pages/main_tool.html", 4);
     addPage($pdf, "./pages/auxiliary_tool.html");
-    addPage($pdf, "./pages/palette/rhythm.html");
-    addPage($pdf, "./pages/palette/pitch.html");
-    addPage($pdf, "./pages/palette/tone.html");
-    addPage($pdf, "./pages/palette/interval.html");
-    addPage($pdf, "./pages/palette/drum.html");
-    addPage($pdf, "./pages/palette/widget.html");
+    addPage($pdf, "./pages/music/rhythm.html");
+    addPage($pdf, "./pages/music/pitch.html");
+    addPage($pdf, "./pages/music/tone.html");
+    addPage($pdf, "./pages/music/interval.html");
+    addPage($pdf, "./pages/music/drum.html");
+    addPage($pdf, "./pages/music/widget.html");
     addPage($pdf, "./pages/graphics/mouse.html");
     addPage($pdf, "./pages/graphics/pen.html");
     addPage($pdf, "./pages/program/flow.html");
@@ -42,19 +42,23 @@ function generatePDFUserGuide(){
     addPage($pdf, "./pages/program/sensor.html");
     addPage($pdf, "./pages/program/heap.html");
     addPage($pdf, "./pages/extra/media.html");
+    addPage($pdf, "./pages/extra/extras.html");
     addPage($pdf, "./pages/extra/heap.html");
-	addPage($pdf, "./pages/graphics/pen.html");
-    addPage($pdf, "./pages/program/boolean.html");
+//    addPage($pdf, "./pages/faq.html");
 
 
     $pdf->Output('Music Blocks User Guide.pdf', 'I');
 
 }
 
-function addPage( $pdfFile, $filePath ){
+function addPage( $pdfFile, $filePath, $page = -1 ){
     $pdfFile->AddPage();
     $html = file_get_contents($filePath);
-    str_replace("<br/>", "", $html);
+    $html = str_replace("<br/>", "", $html);
+    if( $page == 4 )
+    {
+        $html = str_replace("main_toolbar.gif", "main_toolbar.png", $html);
+    }
     $pdfFile->writeHTML($html, true, false, true, false, '');
 
 }
