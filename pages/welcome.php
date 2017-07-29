@@ -5,7 +5,6 @@
         <div class="container">
             <h1><center>Welcome to Music Blocks</center></h1>
             <p>Music Blocks, a collection of programming tools for exploring fundamental musical concepts in an integrative and fun way.</p>
-
             <p>
             <center>
                 <a class="btn btn-primary btn-lg" href="https://codeload.github.com/walterbender/musicblocks/zip/master" target="_blank" role="button" align="left">Download Music Blocks</a>
@@ -17,6 +16,11 @@
             <p>
             <center>
                 <a class="btn btn-success btn-lg" href="http://walterbender.github.io/musicblocks/" target="_blank" role="button" align="left">DO YOU WANT TO PLAY MUSIC BLOCKS NOW?</a>
+            </center>
+            </p>
+            <p>
+            <center>
+                <img src="./dist/img/Welcome/github.png" /><a class="btn btn-link" href="https://github.com/walterbender/musicblocks" target="_blank" role="button" align="left">  Contribute to Music Blocks</a>
             </center>
             </p>
         </div>
