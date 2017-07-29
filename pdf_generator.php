@@ -22,7 +22,8 @@ function generatePDFUserGuide(){
 
     $pdf->SetFont('helvetica', '', 10);
 
-//    addPage($pdf, "./pages/quick_start.html");
+    addPage($pdf, "./pages/start_page.html");
+    addPage($pdf, "./pages/quick_start.html", 2);
 //    addPage($pdf, "./pages/introduction.html");
     addPage($pdf, "./pages/main_tool.html", 4);
     addPage($pdf, "./pages/auxiliary_tool.html");
@@ -56,7 +57,15 @@ function addPage( $pdfFile, $filePath, $page = -1 ){
     $pdfFile->AddPage();
     $html = file_get_contents($filePath);
     $html = str_replace("<br/>", "", $html);
-    if( $page == 4 )
+    if( $page == 2 )
+    {
+        $html = str_replace("<br/>", "", $html);
+        $html = str_replace("This is what it will sound like when complete!", "", $html);
+        $html = str_replace("chunk1_create.gif", "chunk1.png", $html);
+        $html = str_replace("chunk2_create.gif", "chunk2.png", $html);
+        $html = str_replace("hot_cross_animation.gif", "final.png", $html);
+    }
+    else if( $page == 4 )
     {
         $html = str_replace("main_toolbar.gif", "main_toolbar.png", $html);
     }
