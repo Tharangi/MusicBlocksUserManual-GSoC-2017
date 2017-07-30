@@ -179,3 +179,7 @@ input[readonly] {
     background-color: white !important;
     cursor: text !important;
 }
+#hcb-examples #example-table td a:nth-child(2){
+    margin-left: 10%;
+    cursor: pointer;
+}

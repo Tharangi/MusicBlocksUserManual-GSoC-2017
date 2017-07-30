@@ -197,9 +197,7 @@ require_once('pdf_generator.php');
             $path = "./pages/tutorial/tutorial_main.html";
         //examples
         else if( $page == "example")
-            $path = "./pages/example/example_main.html";
-        else if( $page == "example")
-            $path = "./pages/example/example_main.html";
+            $path = "./pages/example/example_main.php";
         else if( $page == "hcb")
             $path = "./pages/example/example_hcb.html";
         //documentation
@@ -285,6 +283,7 @@ require_once('pdf_generator.php');
     <script src="./vendor/metisMenu/metisMenu.min.js"></script>
     <script src="./dist/js/sb-admin-2.js"></script>
     <script src="./dist/js/menu_actions.js"></script>
+    <script src="./dist/js/example_page_actions.js"></script>
     <?php
         if($showMenu)
         {
