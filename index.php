@@ -198,6 +198,8 @@ require_once('pdf_generator.php');
         //examples
         else if( $page == "example")
             $path = "./pages/example/example_main.html";
+        else if( $page == "example")
+            $path = "./pages/example/example_main.html";
         else if( $page == "hcb")
             $path = "./pages/example/example_hcb.html";
         //documentation
