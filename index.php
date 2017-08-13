@@ -205,7 +205,7 @@ require_once('pdf_generator.php');
             $path = "./pages/documentation.html";
         //contribution
         else if( $page == "contribution")
-            $path = "./pages/contribution.html";
+            $path = "./pages/contribution.php";
         //glossary
         else if( $page == "glossary")
             $path = "./pages/glossary.html";
@@ -280,6 +280,7 @@ require_once('pdf_generator.php');
 
     <script src="./vendor/jquery/jquery.min.js"></script>
     <script src="./vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./vendor/filestyles/bootstrap-filestyle.min.js"></script>
     <script src="./vendor/metisMenu/metisMenu.min.js"></script>
     <script src="./dist/js/sb-admin-2.js"></script>
     <script src="./dist/js/menu_actions.js"></script>
