@@ -15,7 +15,7 @@
             </p>
             <p>
             <center>
-                <a class="btn btn-success btn-lg" href="http://walterbender.github.io/musicblocks/" target="_blank" role="button" align="left">DO YOU WANT TO PLAY MUSIC BLOCKS NOW?</a>
+                <a class="btn btn-success btn-lg" href="http://walterbender.github.io/musicblocks/" target="_blank" role="button" align="left">Play Music Blocks Now!</a>
             </center>
             </p>
             <p>
@@ -23,6 +23,7 @@
                 <img src="./dist/img/Welcome/github.png" /><a class="btn btn-link" href="https://github.com/walterbender/musicblocks" target="_blank" role="button" align="left">  Contribute to Music Blocks</a>
             </center>
             </p>
+            <p align="right"><a class="btn btn-link" href="https://github.com/walterbender/musicblocks" target="_blank" role="button" align="left">Join Sugar Labs conversations</a></p>
         </div>
     </div>
 </section>
