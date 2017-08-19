@@ -25,7 +25,7 @@
             </p>
             <br>
             <br>
-            <p align="right"><a class="btn btn-link" href="https://github.com/walterbender/musicblocks" target="_blank" role="button" align="left">Join Sugar Labs conversations</a></p>
+            <p align="right"><a class="btn btn-link" href="http://chat.sugarlabs.org:9090/" target="_blank" role="button" align="left">Join Sugar Labs conversations</a></p>
         </div>
     </div>
 </section>
