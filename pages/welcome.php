@@ -23,6 +23,8 @@
                 <img src="./dist/img/Welcome/github.png" /><a class="btn btn-link" href="https://github.com/walterbender/musicblocks" target="_blank" role="button" align="left">  Contribute to Music Blocks</a>
             </center>
             </p>
+            <br>
+            <br>
             <p align="right"><a class="btn btn-link" href="https://github.com/walterbender/musicblocks" target="_blank" role="button" align="left">Join Sugar Labs conversations</a></p>
         </div>
     </div>
