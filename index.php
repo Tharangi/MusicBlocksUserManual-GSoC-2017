@@ -192,7 +192,15 @@ require_once('pdf_generator.php');
         }
         //tutorials
         else if( $page == "tutorial")
-            $path = "./pages/tutorial/tutorial_main.html";
+            $path = "./pages/tutorial/tutorial_main.php";
+        else if( $page == "make_sound")
+            $path = "./pages/tutorial/make_a_sound.html";
+        else if( $page == "programming_mb")
+            $path = "./pages/tutorial/programming_with_mb.html";
+        else if( $page == "graphics")
+            $path = "./pages/tutorial/graphics.html";
+        else if( $page == "widgets")
+            $path = "./pages/tutorial/widgets.html";                                           
         //examples
         else if( $page == "example")
             $path = "./pages/example/example_main.php";
