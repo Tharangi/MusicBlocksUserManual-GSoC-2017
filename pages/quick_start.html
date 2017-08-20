@@ -133,17 +133,17 @@
                 </div>
             </div>
             <br/>
-            <p class="text-justify">In the second part, sol and la notes are repeated using <a href="#section4repeatblock_desc">"repeat"</a> block.</p>
+            <p class="text-justify">In the second part, sol and la notes are repeated using a <a href="#section4duplicateblock_desc">"duplicate"</a> block.</p>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <img src="./dist/img/quick_start/chunk2_create.gif">
+                    <img src="./dist/img/quick_start/hcb_chunk2_duplicate.gif">
                 </div>
             </div>
             <br/>
             <p class="text-justify">Finished Code! Below is an overview of the entire process.</p>
             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-                    <img src="./dist/img/quick_start/hot_cross_animation.gif">
+                    <img src="./dist/img/quick_start/hcb_all.gif">
                 </div>
             </div>
             <br/>
@@ -181,14 +181,14 @@
 
             <table class="table content_table">
                 <tr id="section4_notevalueblock_desc">
-                    <td><span><i>Note value block:</i></span><img src="./dist/img/quick_start/note_value.png"></td>
+                    <td><span><i>Note value block:</i></span><img src="./dist/img/quick_start/note_value_img.png"></td>
                     <td>Note value block is the fundamental block used to create music. It specifies the duration (note
                         value or rhythmic value) of the whatever is inserted inside its clamp (typically one or more
                         Pitch blocks).
                     </td>
                 </tr>
                 <tr id="section4_pitchblock_desc">
-                    <td><span><i>Pitch block:</i></span><img src="./dist/img/quick_start/pitch.png"></td>
+                    <td><span><i>Pitch block:</i></span><img src="./dist/img/quick_start/pitch_img.png"></td>
                     <td>
                         Pitch blocks are used inside the Note value blocks to specify a pitch name and pitch octave of a
                         note. The name and octave in combination determine the frequency (and therefore pitch) of the
@@ -198,7 +198,7 @@
                     </td>
                 </tr>
                 <tr id="section4_startblock_desc">
-                    <td><span><i>Start block:</i></span><img src="./dist/img/quick_start/start.png"></td>
+                    <td><span><i>Start block:</i></span><img src="./dist/img/quick_start/start_img.png"></td>
                     <td>Every Music Blocks project requires at least one Start block. Any blocks placed inside the clamp
                         of
                         a Start block are played sequentially from top to bottom when either the Start block or the Run
@@ -208,7 +208,7 @@
                     </td>
                 </tr>
                 <tr id="section4actionblock_desc">
-                    <td><span><i>Action block:</i></span><img src="./dist/img/quick_start/action.png"></td>
+                    <td><span><i>Action block:</i></span><img src="./dist/img/quick_start/action_img.png"></td>
                     <td>The clamp of an Action block contains a sequence of blocks that will only be executed from top
                         to
                         bottom when the Action block is referenced by its corresponding named block (See <a
@@ -219,7 +219,7 @@
                 </tr>
                 <tr>
                     <td id="quickstart_chunk"><span><i>Chunk block:</i></span>
-                        <img src="./dist/img/quick_start/chunk.png"><img src="./dist/img/quick_start/chunk_1.png">
+                        <img src="./dist/img/quick_start/chunks.png">
                     </td>
                     <td>Whenever a new Action block is created, a corresponding named block called “action” is
                         automatically
@@ -234,8 +234,15 @@
                     </td>
                 </tr>
                 <tr id="section4repeatblock_desc">
-                    <td><span><i>Repeat block:</i></span><img src="./dist/img/quick_start/repeat.png"></td>
-                    <td>When a phase of music needs to be played repeatedly, a Repeat block can be used.
+                    <td><span><i>Repeat block:</i></span><img src="./dist/img/quick_start/repeat_img.png"></td>
+                    <td>When a phase of music needs to be played repeatedly, a Repeat block can be used. No of times to be repeated can be specified by a number.<br/>
+                        i.e. If there are three rhythm blocks inside the repeat block, and if it specified for 2 repeats, the blocks will be played repeatedly for 2 times (one time all blocks sequentially and again).
+                    </td>
+                </tr>
+                <tr id="section4duplicateblock_desc">
+                    <td><span><i>Duplicate block:</i></span><img src="./dist/img/quick_start/duplicate_notes_img.png"></td>
+                    <td>When a certain part of music needs to be duplicated, this block can be used. No of times to be duplicated should be specified by a number. <br/>
+                        i.e. If there are three rhythm blocks inside the duplicate block, and if it specified for 2 duplicates, each block will be repeated for 2 times, and the blocks will be played sequentially.
                     </td>
                 </tr>
             </table>
