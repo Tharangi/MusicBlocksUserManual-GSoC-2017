@@ -143,7 +143,7 @@
     margin-left: 20px;
 }
 
-#example_hcb #with_music_blocks img, #with_drums img, #with_graphics img, #with_all img, #main_toolbar_explanation img{
+#example_hcb #with_music_blocks img, #with_drums img, #with_graphics img, #with_all img, #main_toolbar_explanation img, #auxi_toolbar_explanation img{
     width: 100%;
     height: 100%;
 }
@@ -182,4 +182,23 @@ input[readonly] {
 #hcb-examples #example-table td a:nth-child(2){
     margin-left: 10%;
     cursor: pointer;
+}
+
+#back_img{
+    background:url('../img/quick_start/desktop.png') no-repeat;
+    min-height: 450px;
+    background-size: contain
+}
+
+#workspace_describe .hover-effect:hover{
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+#workspace_describe #main{
+    min-height: 45px;
+}
+
+#workspace_describe #palette, #workspace, #auxi{
+    min-height: 350px;
 }

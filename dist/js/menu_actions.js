@@ -42,6 +42,23 @@ $( function() {
         }, 'slow');
     });
 
+    $("#workspace_describe #main").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#section_5_main_toolbar").offset().top - 50
+        }, 'slow');
+    });
+
+    $("#workspace_describe #auxi").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#section_5_auxi_toolbar").offset().top - 50
+        }, 'slow');
+    });
+
+    $("#workspace_describe #palette").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#section_5_palette_toolbar").offset().top - 50
+        }, 'slow');
+    });
     // $("#download_pdf").click(function () {
         // $(this).toggleClass("glyphicon glyphicon-refresh glyphicon-refresh-animate");
     // });
