@@ -17,8 +17,8 @@ require_once('pdf_generator.php');
         //getting started
         else if( $page == "get_started")
             $path = "./pages/get_started.html";
-        else if( $page == "quick_start_new")
-            $path = "./pages/quick_start_new.html";
+        else if( $page == "quick_start")
+            $path = "./pages/quick_start.html";
         else if( $page == "introduction")
             $path = "./pages/introduction.html";
         //components of the MB

@@ -10,7 +10,7 @@
         <a href="<?php echo $PATH_PREFIX ?>page=get_started"><i class="fa fa-pencil-square fa-fw"></i> Getting Started<span class="fa arrow"></span></a>
 		<ul class="nav nav-second-level collapse" id="mb-components-ul">
             <li>
-                <a href="<?php echo $PATH_PREFIX ?>page=quick_start_new">Quick Start</span></a>
+                <a href="<?php echo $PATH_PREFIX ?>page=quick_start">Quick Start</span></a>
             </li>
             <li>
                 <a href="<?php echo $PATH_PREFIX ?>page=introduction">Introduction to Music Blocks</span></a>
