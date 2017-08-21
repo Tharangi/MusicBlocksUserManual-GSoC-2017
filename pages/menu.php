@@ -27,7 +27,7 @@
                 <a href="<?php echo $PATH_PREFIX ?>page=auxiliary_tool">Auxiliary Toolbar</span></a>
             </li>
             <li>
-                <a href="<?php echo $PATH_PREFIX ?>page=palette_tool">Palette Toolbar<span class="fa arrow"></span></a>
+                <a href="#" id="palette-tool-header" >Palette Toolbar<span class="fa arrow"></span></a>
                 <ul class="nav nav-third-level" id="mb-palette-toolbar-ul">
                     <li>
                         <a href="<?php echo $PATH_PREFIX ?>page=palette_music">Palettes for Music<span class="fa arrow"></span></a>

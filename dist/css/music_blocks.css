@@ -143,7 +143,7 @@
     margin-left: 20px;
 }
 
-#example_hcb #with_music_blocks img, #with_drums img, #with_graphics img, #with_all img, #main_toolbar_explanation img, #auxi_toolbar_explanation img{
+#example_hcb #with_music_blocks img, #with_drums img, #with_graphics img, #with_all img, #main_toolbar_explanation img, #auxi_toolbar_explanation img, #palette_toolbar_explanation img{
     width: 100%;
     height: 100%;
 }

@@ -8,6 +8,7 @@ require_once('pdf_generator.php');
     $menu_image = "";
     $menu_html = "";
     $showMenu = False;
+    $expandMenu = False;
     if(isset($_GET["page"] )){
 
         $page = strval($_GET["page"]);
@@ -32,7 +33,10 @@ require_once('pdf_generator.php');
             $path = "./pages/auxiliary_tool.html";
         //palette
         else if( $page == "palette_tool")
+        {
             $path = "./pages/palette/palette_tool.html";
+            $expandMenu = True;
+        }
         //music
         else if( $page == "palette_music")
             $path = "./pages/palette/palette_music.html";
@@ -291,6 +295,11 @@ require_once('pdf_generator.php');
             echo '","';
             echo $menu_image;
             echo '");</script>';
+        }
+
+        if($expandMenu)
+        {
+            echo '<script type="text/javascript"> showExpandedMenu("");</script>';
         }
     ?>
 </body>

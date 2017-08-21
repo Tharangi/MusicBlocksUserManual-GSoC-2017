@@ -21,6 +21,13 @@ function hideBlocks() {
     $("#navigation_bar").animate({"width": "260px"});
 }
 
+function showExpandedMenu(){
+    $("#mb-palette-music-ul").collapse("show");
+    $($("#mb-palette-music-ul").parents('ul[id^=mb]').get().reverse()).each(function (index) {
+        $(this).collapse("show");
+    })
+}
+
 $( function() {
 
     $( window ).resize(function() {
@@ -33,6 +40,13 @@ $( function() {
             $(this).collapse("show");
         })
 
+    });
+
+    $('#palette-tool-header').click(function () {
+        if( !$(".nav-fourth-level").is(":visible"))
+        {
+            window.location.href = "?page=palette_tool";
+        }
     });
 
     $("#menu_content li:visible").click(function(){
