@@ -163,6 +163,11 @@
     height: 100%;    
 }
 
+#graphics #content img{
+    width: 100%;
+    height: 100%;    
+}
+
 .btn-file {
     position: relative;
     overflow: hidden;
