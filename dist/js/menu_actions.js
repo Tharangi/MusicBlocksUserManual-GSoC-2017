@@ -28,6 +28,14 @@ function showExpandedMenu(){
     })
 }
 
+function showExandedTutorials() {
+
+    $("#mb-tutorials-ul").collapse("show");
+    $($("#mb-tutorials-ul").parents('ul[id^=mb]').get().reverse()).each(function (index) {
+        $(this).collapse("show");
+    })
+}
+
 $( function() {
 
     $( window ).resize(function() {
@@ -48,6 +56,13 @@ $( function() {
             window.location.href = "?page=palette_tool";
         }
     });
+
+    // $('#tutorial-toolbar-header').click(function () {
+    //     if( !$("#mb-tutorials-ul li").is(":visible") )
+    //     {
+    //         window.location.href = "?page=tutorial";
+    //     }
+    // });
 
     $("#menu_content li:visible").click(function(){
         $clickedIndex = $(this).index();

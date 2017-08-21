@@ -4,30 +4,30 @@
     <br/>
     <form name="contributions_form" action="" method="post" enctype="multipart/form-data">
         <div class="form-group">
-            <label for="projectTitle">Title</label>
+            <label for="projectTitle">Title *</label>
             <input type="text" class="form-control" name="projectTitle" id="projectTitle" placeholder="Enter title">
             <small class="form-text text-muted">Title of the project</small>
         </div>
         <div class="form-group">
-            <label for="projectFile">Project file</label>
+            <label for="projectFile">Project file *</label>
             <input type="file" class="form-control filestyle" id="projectFile" name="projectFile" data-buttonName="btn-primary" data-buttonText="&nbsp;Browse" data-placeholder="Choose a .tb file" readonly>
             <small class="form-text text-muted">Upload the .tb file of the project</small>
         </div>
         <div class="form-group">
-            <label for="projectTitle">Project video</label>
-            <input type="text" class="form-control" name="projectVideo" id="projectVideo" placeholder="Enter URL">
-            <small class="form-text text-muted">Video url the project</small>
-        </div>
-        <div class="form-group">
-            <label for="projectDescription">Description</label>
+            <label for="projectDescription">Description *</label>
             <textarea class="form-control" name="projectDescription" id="projectDescription" rows="4"></textarea>
             <small class="form-text text-muted">Description about the example, with notes and other important information.</small>
         </div>
         <hr/>
         <div class="form-group">
+            <label for="projectTitle">Project video</label>
+            <input type="text" class="form-control" name="projectVideo" id="projectVideo" placeholder="Enter URL">
+            <small class="form-text text-muted">Optional: Video url the project</small>
+        </div>
+        <div class="form-group">
             <label for="name">Name</label>
             <input type="text" class="form-control" name="name" id="name" placeholder="Enter name">
-            <small class="form-text text-muted">Your name will be shown with the example</small>
+            <small class="form-text text-muted">Optional: Your name will be shown with the example</small>
         </div>
         <div class="form-group">
             <label for="linkToProfile">Link to profile</label>
@@ -83,10 +83,7 @@ if(isset($_POST["submit"]))
             }
         }
 
-        if (empty($_POST["projectVideo"])) {
-            $project_video_err = "Project file is required";
-            $error = $error || true;
-        }else {
+        if (!empty($_POST["projectVideo"])) {
             $project_video = modify_values($_POST["projectVideo"]);
             if (!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?=~_|!:,.;]*[-a-z0-9+&@#\/%=~_|]/i",$project_video)) {
                 $project_video_err = "Invalid video URL";

@@ -208,3 +208,9 @@ input[readonly] {
 #workspace_describe #palette, #workspace, #auxi{
     min-height: 350px;
 }
+
+#drum-page audio{
+    vertical-align: middle;
+    margin-left: 5em;
+    margin-right: 5em;
+}

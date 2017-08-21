@@ -9,6 +9,7 @@ require_once('pdf_generator.php');
     $menu_html = "";
     $showMenu = False;
     $expandMenu = False;
+    $expandTutorial = False;
     if(isset($_GET["page"] )){
 
         $page = strval($_GET["page"]);
@@ -196,7 +197,10 @@ require_once('pdf_generator.php');
         }
         //tutorials
         else if( $page == "tutorial")
+        {
+            $expandTutorial = True;
             $path = "./pages/tutorial/tutorial_main.php";
+        }
         else if( $page == "make_sound")
             $path = "./pages/tutorial/make_a_sound.html";
         else if( $page == "programming_mb")
@@ -307,7 +311,11 @@ require_once('pdf_generator.php');
 
         if($expandMenu)
         {
-            echo '<script type="text/javascript"> showExpandedMenu("");</script>';
+            echo '<script type="text/javascript"> showExpandedMenu();</script>';
+        }
+        if($expandTutorial)
+        {
+            echo '<script type="text/javascript"> showExandedTutorials();</script>';
         }
     ?>
 </body>
