@@ -106,7 +106,15 @@
     </li>
     <li>
         <a href="<?php echo $PATH_PREFIX ?>page=tutorial"><i class="fa fa-wrench fa-fw"></i> Play with Music Blocks<span class="fa arrow"></span></a>
-
+        <ul class="nav nav-second-level">
+            <li>
+                <a href="<?php echo $PATH_PREFIX ?>page=tutorial">Lessons</a>
+                <a href="<?php echo $PATH_PREFIX ?>page=make_sound">How to Make a Sound</a>
+                <a href="<?php echo $PATH_PREFIX ?>page=programming_mb">Programming with Music Blocks</a>
+                <a href="<?php echo $PATH_PREFIX ?>page=graphics">Graphics</a>
+                <a href="<?php echo $PATH_PREFIX ?>page=widgets">Widgets</a>
+            </li>
+        </ul>
     </li>
     <li>
         <a href="<?php echo $PATH_PREFIX ?>page=example"><i class="fa fa-music fa-fw"></i> Examples with Music Blocks<span class="fa arrow"></span></a>

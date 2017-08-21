@@ -12,7 +12,7 @@
 					<thead class="thead-default">
 					<tr>
 						<th>Song</th>
-						<th>Listen/ Download</th>
+						<th>Listen/ Download/ Open in Music Blocks</th>
 						<th>Used Blocks</th>
 					</tr>
 					</thead>
@@ -20,62 +20,54 @@
 					<tr>
 						<td>
                             <a href="#">Frère Jacques</a>
-                            <a class="glyphicon glyphicon-new-window"></a>
+                            
                         </td>
 						<td>
 							<audio controls>
 								<source src="./dist/resources/" type="audio/mpeg">
 							</audio>
+							<a class="glyphicon glyphicon-new-window"></a>
 						</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>
                             <a href="#">Frère Jacques - Interactive</a>
-                            <a class="glyphicon glyphicon-new-window"></a>
+                            
                         </td>
                         <td>
 							<audio controls>
 								<source src="" type="audio/mpeg">
 							</audio>
+							<a class="glyphicon glyphicon-new-window"></a>
 						</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>
                             <a href="#">Hot Cross Buns - First Form Discovery Start</a>
-                            <a class="glyphicon glyphicon-new-window"></a>
+                            
                         </td>
 						<td>
 							<audio controls>
 								<source src="" type="audio/mpeg">
 							</audio>
+							<a class="glyphicon glyphicon-new-window"></a>
 						</td>
 						<td></td>
 					</tr>
 					<tr>
 						<td>
                             <a href="<?php echo $PATH_PREFIX ?>page=hcb">Hot Cross Buns</a>
-                            <a class="glyphicon glyphicon-new-window"></a>
+                            
                         </td>
 						<td>
 							<audio controls>
 								<source src="./dist/resources/example_hcb/all.mp3" type="audio/mpeg">
 							</audio>
+							<a class="glyphicon glyphicon-new-window"></a>
 						</td>
 						<td>Rhythm, Pitch, Action, Repeat, Duplication, Chunk, Start, Drums</td>
-					</tr>
-					<tr>
-						<td>
-                            <a href="#">Example 5</a>
-                            <a class="glyphicon glyphicon-new-window"></a>
-                        </td>
-						<td>
-							<audio controls>
-								<source src="" type="audio/mpeg">
-							</audio>
-						</td>
-						<td></td>
 					</tr>
 					</tbody>
 				</table>
