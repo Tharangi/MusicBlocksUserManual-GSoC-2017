@@ -118,10 +118,6 @@
     margin-left: 5em;
 }
 
-#quickstart_page #hcb_solfege img{
-    max-height: 100px;
-}
-
 #quickstart_page #section_2 span{
     font-family: monospace;
     font-size: inherit;
@@ -143,9 +139,14 @@
     margin-left: 20px;
 }
 
-#example_hcb #with_music_blocks img, #with_drums img, #with_graphics img, #with_all img, #main_toolbar_explanation img, #auxi_toolbar_explanation img, #palette_toolbar_explanation img{
+.full-size-100p{
     width: 100%;
     height: 100%;
+}
+
+#hcb_solfege img{
+    width: 80%;
+    height: 80%;
 }
 
 #example_hcb audio {
@@ -191,7 +192,7 @@ input[readonly] {
 
 #back_img{
     background:url('../img/quick_start/desktop.png') no-repeat;
-    min-height: 450px;
+    min-height: 400px;
     background-size: contain
 }
 
