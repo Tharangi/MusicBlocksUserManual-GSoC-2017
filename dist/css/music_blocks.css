@@ -214,6 +214,16 @@ input[readonly] {
     min-height: 350px;
 }
 
+@media(min-width: 1500px){
+    #workspace_describe #main{
+        min-height: 70px;
+    }
+
+    #workspace_describe #palette, #workspace, #auxi{
+        min-height: 550px;
+    }
+}
+
 #drum-page audio{
     vertical-align: middle;
     margin-left: 5em;
