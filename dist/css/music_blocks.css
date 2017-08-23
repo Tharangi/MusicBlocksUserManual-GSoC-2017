@@ -144,6 +144,11 @@
     height: 100%;
 }
 
+.initial-size{
+    height: initial;
+    width: initial;
+}
+
 #hcb_solfege img{
     width: 80%;
     height: 80%;
