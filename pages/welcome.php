@@ -19,7 +19,7 @@
             </p>
             <p>
                 <center>
-                    <img src="./dist/img/Welcome/github.png" /><a class="btn btn-link" href="https://github.com/walterbender/musicblocks" target="_blank" role="button" align="left">  Contribute to Music Blocks</a>
+                    <img src="./dist/img/welcome/github.png" /><a class="btn btn-link" href="https://github.com/walterbender/musicblocks" target="_blank" role="button" align="left">  Contribute to Music Blocks</a>
                 </center>
             </p>
             <br/>
