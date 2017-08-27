@@ -65,7 +65,7 @@
 							<audio controls>
 								<source src="./dist/resources/example_hcb/all.mp3" type="audio/mpeg">
 							</audio>
-							<a class="glyphicon glyphicon-new-window"></a>
+							<a class="glyphicon glyphicon-new-window" href="https://walterbender.github.io/musicblocks/index.html?file=MusicBlocks_HCB_all.tb&run=True" target="_blank"></a>
 						</td>
 						<td>Rhythm, Pitch, Action, Repeat, Duplication, Chunk, Start, Drums</td>
 					</tr>
