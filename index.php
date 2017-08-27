@@ -9,8 +9,10 @@ require_once('pdf_generator.php');
     $menu_html = "";
     $showMenu = False;
     $expandMenu = False;
+    $expandExample = False;
     $expandTutorial = False;
-    if(isset($_GET["page"] )){
+    $expandComponents = False;
+if(isset($_GET["page"] )){
 
         $page = strval($_GET["page"]);
         //welcome
@@ -25,7 +27,10 @@ require_once('pdf_generator.php');
             $path = "./pages/introduction.html";
         //components of the MB
         else if( $page == "components")
+        {
             $path = "./pages/components.html";
+            $expandComponents = True;
+        }
         //main tool
         else if( $page == "main_tool")
             $path = "./pages/main_tool.html";
@@ -202,16 +207,31 @@ require_once('pdf_generator.php');
             $path = "./pages/tutorial/tutorial_main.php";
         }
         else if( $page == "make_sound")
+        {
+            $expandTutorial = True;
             $path = "./pages/tutorial/make_a_sound.html";
+        }
         else if( $page == "programming_mb")
+        {
             $path = "./pages/tutorial/programming_with_mb.html";
+            $expandTutorial = True;
+        }
         else if( $page == "graphics")
+        {
             $path = "./pages/tutorial/graphics.html";
+            $expandTutorial = True;
+        }
         else if( $page == "widgets")
-            $path = "./pages/tutorial/widgets.html";                                           
+        {
+            $path = "./pages/tutorial/widgets.html";
+            $expandTutorial = True;
+        }
         //examples
         else if( $page == "example")
+        {
+            $expandExample = True;
             $path = "./pages/example/example_main.php";
+        }
         else if( $page == "hcb")
             $path = "./pages/example/example_hcb.html";
         //documentation
@@ -288,7 +308,7 @@ require_once('pdf_generator.php');
 
 	<footer class="footer">
       <div class="container">
-        <p align="center"><small>Copyright © 2017 by Dinuka Tharangi Jayaweera. Webpage Licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">GNU Affero General Public License</a> (<a href="https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017/blob/master/License.txt" target="_blank">https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017/blob/master/License.txt</a>). Source code can be found at <a href="https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017" target="_blank">https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017</a>. </small></p>
+        <p align="center"><small>Copyright © 2017 by Dinuka Tharangi Jayaweera. <br/>Webpage Licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">GNU Affero General Public License</a> (<a href="https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017/blob/master/License.txt" target="_blank">https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017/blob/master/License.txt</a>). Source code can be found at <a href="https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017" target="_blank">https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017</a>. </small></p>
       </div>
     </footer>
 
@@ -300,6 +320,7 @@ require_once('pdf_generator.php');
     <script src="./dist/js/menu_actions.js"></script>
     <script src="./dist/js/example_page_actions.js"></script>
     <?php
+
         if($showMenu)
         {
             echo '<script type="text/javascript"> showBlocks("';
@@ -315,7 +336,15 @@ require_once('pdf_generator.php');
         }
         if($expandTutorial)
         {
-            echo '<script type="text/javascript"> showExandedTutorials();</script>';
+            echo '<script type="text/javascript"> showExpandedTutorials();</script>';
+        }
+        if($expandExample)
+        {
+            echo '<script type="text/javascript"> showExpandedExamples();</script>';
+        }
+        if($expandComponents)
+        {
+            echo '<script type="text/javascript"> showExpandedComponents();</script>';
         }
     ?>
 </body>

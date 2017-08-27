@@ -8,7 +8,7 @@
     </li>
     <li>
         <a href="<?php echo $PATH_PREFIX ?>page=get_started"><i class="fa fa-pencil-square fa-fw"></i> Getting Started<span class="fa arrow"></span></a>
-		<ul class="nav nav-second-level collapse" id="mb-components-ul">
+		<ul class="nav nav-second-level collapse" id="mb-getting-start-ul">
             <li>
                 <a href="<?php echo $PATH_PREFIX ?>page=quick_start">Quick Start</span></a>
             </li>
@@ -105,7 +105,7 @@
         </ul>
     </li>
     <li>
-        <a id="tutorial-toolbar-header" href="<?php echo $PATH_PREFIX ?>page=tutorial"><i class="fa fa-wrench fa-fw"></i> Play with Music Blocks<span class="fa arrow"></span></a>
+        <a id="tutorial-toolbar-header"><i class="fa fa-wrench fa-fw"></i> Play with Music Blocks<span class="fa arrow"></span></a>
         <ul class="nav nav-second-level" id="mb-tutorials-ul">
             <li><a href="<?php echo $PATH_PREFIX ?>page=make_sound">How to Make a Sound</a></li>
             <li><a href="<?php echo $PATH_PREFIX ?>page=programming_mb">Programming with Music Blocks</a></li>
@@ -114,12 +114,9 @@
         </ul>
     </li>
     <li>
-        <a href="<?php echo $PATH_PREFIX ?>page=example"><i class="fa fa-music fa-fw"></i> Examples with Music Blocks<span class="fa arrow"></span></a>
-        <ul class="nav nav-second-level">
-            <li>
-                <a href="<?php echo $PATH_PREFIX ?>page=example">Examples</a>
-                <a href="<?php echo $PATH_PREFIX ?>page=hcb">Hot Cross Buns</a>
-            </li>
+        <a id="examples-toolbar-header"><i class="fa fa-music fa-fw"></i> Examples with Music Blocks<span class="fa arrow"></span></a>
+        <ul class="nav nav-second-level" id="mb-examples-ul">
+            <li><a href="<?php echo $PATH_PREFIX ?>page=hcb">Hot Cross Buns</a></li>
         </ul>
     </li>
     <li>

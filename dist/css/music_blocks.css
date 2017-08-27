@@ -200,6 +200,10 @@ input[readonly] {
     cursor: pointer;
 }
 
+#hcb-examples #example-table audio{
+    width: 80%;
+}
+
 #back_img{
     background:url('../img/quick_start/desktop.png') no-repeat;
     min-height: 400px;

@@ -2,12 +2,12 @@
 	<h1 class="page-header">Examples with Music Blocks</h1>
 		<br/>
 		<div class="row">
-			<div class="col-md-offset-1 col-md-3">Search by Used Blocks:</div>
+			<div class="col-md-offset-1 col-md-3 col-xs-3">Search by Used Blocks:</div>
 			<div class="col-md-7"><input type="text" class="light-table-filter form-control" data-table="order-table" placeholder="Search for blocks..."></div>
 		</div>
 		<br/>
 		<div class="row">
-			<div class="col-lg-12">
+			<div class="col-md-12 col-xs-12">
 				<table class="order-table table" id="example-table">
 					<thead class="thead-default">
 					<tr>
@@ -20,7 +20,7 @@
 					<tr>
 						<td>
                             <a href="#">Frère Jacques</a>
-                            
+
                         </td>
 						<td>
 							<audio controls>
