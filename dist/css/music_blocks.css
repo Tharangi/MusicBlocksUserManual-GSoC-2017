@@ -95,6 +95,11 @@
     margin-bottom: 10px;
 }
 
+#introduction_page blockquote{
+    font-style: italic;
+    font-size: 15px;
+}
+
 #quickstart_page #animation, #desktop{
     width: 100%;
 }
