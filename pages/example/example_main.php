@@ -41,7 +41,7 @@
 							</audio>
 							<a class="glyphicon glyphicon-new-window" href="https://walterbender.github.io/musicblocks/index.html?file=MusicBlocks_Frère_Jacques__Interactive.tb&run=True" target="_blank"></a>
 						</td>
-						<td>Start, Action, Chunk, Repeat, Forever, Store-in, Box, If-then, Greater-than, Cursor-x, Add cursor-y, Do, Plus (arithmatic), Notevalue, Pitch</td>
+						<td>Start, Action, Chunk, Repeat, Forever, Store-in, Box, If-then, Greater-than, Add, Cursor-x, Cursor-y, Do, Plus (arithmatic), Notevalue, Pitch</td>
 					</tr>
 					<tr>
 						<td>
