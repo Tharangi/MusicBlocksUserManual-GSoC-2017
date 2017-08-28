@@ -3,6 +3,8 @@
 Instructions:
 
     - run the music_blocks_database.sql to create the database and relevant tables.
+    
+Please note that your database server should be MySQL compatible.
 
 ### phpMyAdmin Instructions
 
