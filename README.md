@@ -2,18 +2,13 @@
 
 Instructions:
 
-    - run the music_blocks_database.sql (with mysql or PHPmyadmin) to create the database and relevant tables.
+    - run the music_blocks_database.sql in your local server(SQL compatible) to create the database and relevant tables.
 
-PHPmyadmin instructions
+### phpMyAdmin Instructions
 
-* Requirements
-
-** PHPmyadmin
-** Anything else?
-
-    - log into your PHPmyadmin account
-    - import the inlcuded musc_blocks_database.sql file (image HERE)
-
-mysql Instructions
-
-TODO add mysql instructions
+    - Log into your phpMyAdmin account.
+    - Import the music_blocks_database.sql file and run it.   
+    
+ Some useful URLs:
+ 
+ http://www.techrepublic.com/blog/smb-technologist/import-and-export-databases-using-phpmyadmin/
