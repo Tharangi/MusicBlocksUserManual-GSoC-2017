@@ -11,9 +11,9 @@
 				<table class="order-table table" id="example-table">
 					<thead class="thead-default">
 					<tr>
-						<th>Song</th>
-						<th>Listen/ Download/ Open in Music Blocks</th>
-						<th>Used Blocks</th>
+						<th class="col-md-3">Song</th>
+						<th class="col-md-4">Listen/ Download/ Open in Music Blocks</th>
+						<th class="col-md-5">Used Blocks</th>
 					</tr>
 					</thead>
 					<tbody>
@@ -24,7 +24,7 @@
                         </td>
 						<td>
 							<audio controls>
-								<source src="./dist/resources/" type="audio/mpeg">
+								<source src="./dist/resources/example_frere/frere-ja.mp3" type="audio/mpeg">
 							</audio>
 							<a class="glyphicon glyphicon-new-window" href="https://walterbender.github.io/musicblocks/index.html?file=MusicBlocks_Fr%C3%A8re_Jacques.tb&run=True" target="_blank"></a>
 						</td>
@@ -37,7 +37,7 @@
                         </td>
                         <td>
 							<audio controls>
-								<source src="" type="audio/mpeg">
+								<source src="./dist/resources/example_frere/frere-ja.mp3" type="audio/mpeg">
 							</audio>
 							<a class="glyphicon glyphicon-new-window" href="https://walterbender.github.io/musicblocks/index.html?file=MusicBlocks_Frère_Jacques__Interactive.tb&run=True" target="_blank"></a>
 						</td>
@@ -50,7 +50,7 @@
                         </td>
 						<td>
 							<audio controls>
-								<source src="" type="audio/mpeg">
+								<source src="./dist/resources/example_hcb/all.mp3" type="audio/mpeg">
 							</audio>
 							<a class="glyphicon glyphicon-new-window" href="https://walterbender.github.io/musicblocks/index.html?file=MusicBlocks_Hot_Cross_Buns__First_Form_Discovery_Start.tb" target="_blank"></a>
 						</td>
