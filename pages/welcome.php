@@ -3,7 +3,7 @@
     <div class="jumbotron">
         <div class="container">
             <h1><center>Welcome to Music Blocks</center></h1>
-            <h3><small><center>~ A collection of programming tools for exploring fundamental musical concepts in an interactive and fun way ~</center><small></h3>
+            <h3><small><center>A visual programming language for exploring musical concepts</center><small></h3>
             <p>
                 <center>
                     <a class="btn btn-primary active btn-lg" href="https://codeload.github.com/walterbender/musicblocks/zip/master" target="_blank" role="button" align="left">Download Music Blocks</a>

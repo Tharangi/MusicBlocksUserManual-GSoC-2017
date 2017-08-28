@@ -308,7 +308,7 @@ if(isset($_GET["page"] )){
 
 	<footer class="footer">
       <div class="container">
-        <p align="center"><small>Copyright © 2017 by Dinuka Tharangi Jayaweera. <br/>Webpage Licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">GNU Affero General Public License</a> (<a href="https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017/blob/master/License.txt" target="_blank">https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017/blob/master/License.txt</a>). Source code can be found at <a href="https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017" target="_blank">https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017</a>. </small></p>
+        <p align="center"><small><a href="https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017/blob/master/License.txt">Copyright © 2017 by Dinuka Tharangi Jayaweera.</a> <br/>Webpage Licensed under <a href="https://www.gnu.org/licenses/agpl-3.0.en.html" target="_blank">GNU Affero General Public License</a>. <a href="https://github.com/Tharangi/MusicBlocksUserManual-GSoC-2017" target="_blank">Source Code</a>. </small></p>
       </div>
     </footer>
 
