@@ -2,7 +2,7 @@
 
 Instructions:
 
-    - run the music_blocks_database.sql in your local server(SQL compatible) to create the database and relevant tables.
+    - run the music_blocks_database.sql to create the database and relevant tables.
 
 ### phpMyAdmin Instructions
 
