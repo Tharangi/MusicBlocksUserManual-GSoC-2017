@@ -7,6 +7,10 @@ To get started with Music Blocks, newbies need to have a fundamental understandi
 
 This project started as a Google Summer of Code 2017 by Dinuka Tharangi Jayaweera mentored by Walter Bender and Devin Ulibarrri. Also, Hrishi Patel and Cristina Del Puerto contributed. 
 
+## How to setup and run
+                     
+Clone or download the source code into a server(PHP supported) and start the server (i.e. [WampServer](http://www.wampserver.com/en/)).
+
 **Instructions for Database setup**
 
     - run the music_blocks_database.sql to create the database and relevant tables.
