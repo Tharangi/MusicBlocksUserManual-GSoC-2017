@@ -93,7 +93,7 @@ $( function() {
     });
 
      //$('#mb-components-ul').on('shown.bs.collapse', function() {
-         window.location.href = "?page=components";
+      //   window.location.href = "?page=components";
      //});
 
 } );
