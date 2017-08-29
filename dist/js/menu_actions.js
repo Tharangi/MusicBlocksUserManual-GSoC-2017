@@ -89,11 +89,11 @@ $( function() {
     });
 
     $('#mb-palette-toolbar-ul').on('shown.bs.collapse', function() {
-        window.location.href = "?page=palette_tool";
+        //window.location.href = "?page=palette_tool";
     });
 
-    // $('#mb-components-ul').on('shown.bs.collapse', function() {
-    //     window.location.href = "?page=components";
-    // });
+     //$('#mb-components-ul').on('shown.bs.collapse', function() {
+         window.location.href = "?page=components";
+     //});
 
 } );
