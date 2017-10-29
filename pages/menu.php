@@ -50,6 +50,12 @@
                             <li>
                                 <a href="<?php echo $PATH_PREFIX ?>page=widget"><img src="./dist/img/widget.png" class="img_btn_icon" ><span>Widgets</span></a>
                             </li>
+							<li>
+                                <a href="<?php echo $PATH_PREFIX ?>page=volume"><img src="./dist/img/volume.png" class="img_btn_icon" ><span>Volume</span></a>
+                            </li>
+							<li>
+                                <a href="<?php echo $PATH_PREFIX ?>page=meter"><img src="./dist/img/meter.png" class="img_btn_icon" ><span>Meter</span></a>
+                            </li>
                         </ul>
                     </li>
                     <li>
@@ -60,6 +66,9 @@
                             </li>
                             <li>
                                 <a href="<?php echo $PATH_PREFIX ?>page=pen"><img src="./dist/img/pen.png" class="img_btn_icon" ><span>Pen</span></a>
+                            </li>
+							<li>
+                                <a href="<?php echo $PATH_PREFIX ?>page=mice"><img src="./dist/img/mice.png" class="img_btn_icon" ><span>Mice</span></a>
                             </li>
                         </ul>
                     </li>

@@ -94,6 +94,22 @@ if(isset($_GET["page"] )){
             $menu_html = "./pages/palette/widget_block.html";
             $showMenu = True;
         }
+		else if( $page == "volume")
+        {
+            $path = "./pages/music/volume.html";
+            $menu_title = "Volume";
+            $menu_image = "./dist/img/volume.png";
+            $menu_html = "./pages/palette/volume_block.html";
+            $showMenu = True;
+        }
+		else if( $page == "meter")
+        {
+            $path = "./pages/music/meter.html";
+            $menu_title = "Meter";
+            $menu_image = "./dist/img/meter.png";
+            $menu_html = "./pages/palette/meter_block.html";
+            $showMenu = True;
+        }
 
         //graphic
         else if( $page == "palette_graphics")
@@ -114,6 +130,14 @@ if(isset($_GET["page"] )){
             $menu_title = "Pen";
             $menu_image = "./dist/img/pen.png";
             $menu_html = "./pages/palette/pen_block.html";
+            $showMenu = True;
+        }
+		else if( $page == "mice")
+        {
+            $path = "./pages/graphics/mice.html";
+            $menu_title = "Mice";
+            $menu_image = "./dist/img/mice.png";
+            $menu_html = "./pages/palette/mice_block.html";
             $showMenu = True;
         }
 
